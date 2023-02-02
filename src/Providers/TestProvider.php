@@ -10,6 +10,9 @@ class TestProvider extends ServiceProvider
 
     public function boot()
     {
+        echo "test";
+        echo __DIR__;
+
         // $this->loadMigrationsFrom(__DIR__.'../../database/migrations');
 	    $this->loadRoutesFrom(__DIR__ . '/../Routes/web.php');
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
