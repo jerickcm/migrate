@@ -1,0 +1,20 @@
+{
+    "name": "jerickcm/migrate",
+    "description": "Testing again laravel migration in package",
+    "require": {
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jerickcm\\Migrate\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jerick-CM",
+            "email": "jmangaluz@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
