@@ -12,10 +12,12 @@ class TestProvider extends ServiceProvider
     {
         echo "test";
         echo __DIR__;
+        echo __DIR__ . '../../../database/migrations';
+        echo __DIR__ . '/../Routes/web.php';
 
         // $this->loadMigrationsFrom(__DIR__.'../../database/migrations');
 	    $this->loadRoutesFrom(__DIR__ . '/../Routes/web.php');
-        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__ . '../../../database/migrations');
 
         // if ($this->app->runningInConsole()) {
         //     if (!class_exists('CreatePostsTable')) {
@@ -26,6 +28,7 @@ class TestProvider extends ServiceProvider
         // }
 
         // $this->loadViewsFrom(__DIR__.'/../views', 'inspire');
+
     }
 
     public function register()
