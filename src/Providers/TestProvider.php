@@ -36,7 +36,7 @@ class TestProvider extends ServiceProvider
 
             if (!class_exists('CreateMobilephonesTable')) {
                 $this->publishes([
-                    base_path() . '/vendor/jerickcm/migrate/database/stub/create_create_mobilephones_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_create_mobilephones_table.php'),
+                    base_path() . '/vendor/jerickcm/migrate/database/stub/create_mobilephones_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_create_mobilephones_table.php'),
                 ], 'migrations');
             }
 
