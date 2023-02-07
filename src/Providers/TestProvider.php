@@ -41,7 +41,7 @@ class TestProvider extends ServiceProvider
             }
 
             $this->publishes([
-                base_path() . '/../database/seeders/SimcardSeeder.php' => database_path('seeders/SimcardSeeder.php'),
+                base_path() . '/vendor/jerickcm/migrate/database/seeders/SimcardSeeder.php' => database_path('seeders/SimcardSeeder.php'),
             ], 'seeds');
 
         }
